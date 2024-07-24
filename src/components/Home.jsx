@@ -28,7 +28,7 @@ const HomePage = () => {
       </Carousel>
 
       {/* Programs Section */}
-      <section className="py-12 bg-gray-100">
+      <section id="programs" className="py-12 bg-gray-100">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-semibold text-center mb-8">
             Our Programs
