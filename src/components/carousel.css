@@ -1,0 +1,17 @@
+.carousel-container {
+    position: relative;
+  }
+  
+  .carousel .legend {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .carousel .slide img {
+    max-height: 500px;
+    object-fit: cover;
+  }
+  
