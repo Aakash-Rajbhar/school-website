@@ -9,23 +9,35 @@ import carousel_3 from '../assets/carousel_3.jpg';
 
 const HomePage = () => {
   return (
-    <div className='mt-[70px]'>
+    <div className="mt-[70px] ">
       {/* Carousel */}
+      <div className='relative mt-[70px]'>
       <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true}>
-        <div>
-          <img
-            className="object-cover overflow-clip"
-            src={carousel_1}
-            alt="Slide 1"
-          />
-        </div>
-        <div>
-          <img src={carousel_2} alt="Slide 2" />
-        </div>
-        <div>
-          <img src={carousel_3} alt="Slide 3" />
-        </div>
+          <div>
+            <img className='relative' src={carousel_1} alt="Slide 1" />
+            <div className='absolute top-0 left-0 w-full h-full bg-black opacity-70'></div>
+          </div>
+          <div>
+            <img className='relative' src={carousel_2} alt="Slide 2" />
+            <div className='absolute top-0 left-0 w-full h-full bg-black opacity-70'></div>
+          </div>
+          <div>
+            <img className='relative' src={carousel_3} alt="Slide 3" />
+            <div className='absolute top-0 left-0 w-full h-full bg-black opacity-70'></div>
+          </div>
       </Carousel>
+      <div className="absolute w-full h-full top-0 left-0 flex flex-col items-center justify-center gap-4 text-white text-center" >
+            <h1 className=' text-2xl sm:text-4xl lg:text-6xl font-bold'>Welcome to <br /> Springdale Public School</h1>
+            <p className='hidden w-[70%] md:block  text-center'>
+              Springdale Public School is committed to providing a safe,
+              welcoming, and inclusive environment for all students. Our mission
+              is to inspire and empower students to succeed through a strong
+              foundation in education, creativity, and personal growth.
+
+            </p>
+          </div>
+      </div>
+          
 
       {/* Programs Section */}
       <section id="programs" className="py-12 bg-gray-100">

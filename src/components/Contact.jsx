@@ -67,20 +67,20 @@ const Contact = () => {
           </form>
         </div>
         <div className=' flex flex-col items-center justify-between md:flex-row-reverse gap-8'>
-        <div className="mt-12 text-center w-[30%] flex flex-col gap-2 items-center">
-          <h3 className="text-2xl font-bold text-gray-800 mb-4">Contact Information</h3>
-          <p className="text-lg text-gray-600 mb-2">Phone: <a href="tel:+1234567890" className="text-blue-500 hover:underline">+123 456 7890</a></p>
-          <p className="text-lg text-gray-600 mb-2">Email: <a href="mailto:info@springdale.edu" className="text-blue-500 hover:underline">info@springdale.edu</a></p>
+        <div className="mt-12  w-full lg:w-[30%] flex flex-col gap-2 items-center text-center lg:text-left">
+          <h3 className="text-2xl font-bold text-gray-800 mb-4 w-full lg:text-left">Contact Information</h3>
+          <p className="text-lg text-gray-600 mb-2 w-full  lg:text-left">Phone: <a href="tel:+1234567890" className="text-blue-500 hover:underline">+123 456 7890</a></p>
+          <p className="text-lg text-gray-600 mb-2  w-full lg:text-left">Email: <a href="mailto:info@springdale.edu" className="text-blue-500 hover:underline">info@springdale.edu</a></p>
           <p className="text-lg text-gray-600 mb-4 ">Address: 1234 Springdale Avenue, Springfield, IL 62704</p>
         </div>
         {/* Map Section */}
-        <div className="w-[70%]">
-          <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">Find Us</h3>
-          <div className="w-full h-64 md:h-80 lg:h-[500px] rounded-lg overflow-hidden">
+        <div className="w-full mt-8">
+          <div className="w-full h-64 md:h-80 lg:h-[500px] rounded-lg p-6 overflow-hidden border-2 border-gray-300 shadow-lg">
+            <h3 className='text-2xl font-semibold capitalize'>find us</h3>
             <iframe
               title="Google Maps Location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.132846411662!2d-77.03530858467924!3d38.89875197957017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7cfd0df4baf%3A0x19c3403e43a05e4!2s1600%20Pennsylvania%20Ave%20NW%2C%20Washington%2C%20DC%2020050!5e0!3m2!1sen!2sus!4v1633461416096!5m2!1sen!2sus"
-              className="w-full h-full border-0"
+              className="w-full h-[95%] border-0"
               allowFullScreen
               loading="lazy"
             />
